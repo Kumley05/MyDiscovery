@@ -1,0 +1,336 @@
+/* ========================================================================
+   BASE RESET
+   ======================================================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #eee;
+  background: #111;
+  line-height: 1.6;
+}
+a {
+  color: #00a0dc;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* ========================================================================
+   3D NET BACKDROP & OVERLAY
+   ======================================================================== */
+#vanta-bg {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  z-index: 0;
+}
+#overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(10,25,47,0.6);
+  z-index: 1;
+}
+#content {
+  position: relative;
+  z-index: 2;
+}
+
+/* ========================================================================
+   HERO SECTION
+   ======================================================================== */
+#hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+}
+.hero-content h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+.subtitle {
+  font-weight: 600;
+  opacity: 0.8;
+  margin-bottom: 1rem;
+}
+.tagline {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  background: rgba(0,160,220,0.2);
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  margin-bottom: 2rem;
+}
+.btn {
+  background: #00a0dc;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.btn:hover {
+  background: #008bb5;
+}
+
+/* ========================================================================
+   GLOBAL SECTIONS
+   ======================================================================== */
+section {
+  padding: 4rem 1rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+section h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+/* ABOUT */
+#about p {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* ========================================================================
+   SKILLS
+   ======================================================================== */
+#skills p {
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+.skill-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+.skill-logos a {
+  width: 60px;
+  height: 60px;
+  display: inline-block;
+  transition: transform 0.2s,filter 0.2s;
+  /* background-color: #eee; */
+  
+}
+.skill-logos a:hover {
+  transform: scale(1.55);
+  filter: drop-shadow(0 0 8px rgba(0, 160, 220, 0.5));
+}
+.skill-logos img {
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+}
+
+/* ========================================================================
+   EXPERIENCE TIMELINE
+   ======================================================================== */
+#experience .timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+#experience .item h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.25rem;
+}
+#experience .item h4 {
+  font-size: 0.95rem;
+  opacity: 0.7;
+  margin-bottom: 0.5rem;
+}
+#experience .item ul {
+  list-style: disc inside;
+}
+
+/* ========================================================================
+   PROJECTS
+   ======================================================================== */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+.card {
+  background: rgba(255,255,255,0.05);
+  padding: 1.5rem;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card h3 {
+  margin-bottom: 0.5rem;
+}
+.card p {
+  flex: 1;
+  margin-bottom: 1rem;
+}
+
+/* ========================================================================
+   CONTACT
+   ======================================================================== */
+#contact form {
+  max-width: 500px;
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+#contact input,
+#contact textarea {
+  padding: 0.75rem;
+  border: 1px solid #444;
+  border-radius: 4px;
+  background: #222;
+  color: #eee;
+}
+#contact button {
+  align-self: center;
+}
+
+/* ========================================================================
+   FOOTER
+   ======================================================================== */
+footer {
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  opacity: 0.6;
+}
+footer .location {
+    margin-top: 0.4em;
+    font-size: 0.95rem;
+    color: #77cdf2;
+    opacity: 0.85;
+}
+/* Ensure the wrapper is positioned for absolute children */
+.iti--separate-dial-code {
+  position: relative;
+  width: 100%;
+  margin-bottom: 1em; /* match your other inputs */
+}
+
+/* Style the actual <input> */
+#phone {
+  width: 100%;
+  padding: 0.5em 1em 0em 2em;     /* top/right/bottom/left */
+  padding-left: 3em;    /* space for flag + dial code */
+  background: #112044;
+  color: #e3eaf5;
+  border: 1.5px solid #00a0dc;
+  border-radius: 8px;
+  background: #112044;
+  font-size: 1.02rem;
+  outline: none;
+  font-family: inherit;
+}
+
+/* Focus state matches other inputs */
+#phone:focus {
+  border-color: #fcd55a;
+}
+
+/* Position the flag */
+.iti__selected-flag {
+  position: absolute;
+  top: 50%;
+  left: -.39em;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+/* Position the dial code */
+.iti__selected-dial-code {
+  position: absolute;
+  top: 50%;
+  left: 1.55em;
+  transform: translateY(-50%);
+  font-size: 1rem;
+  color: #e3eaf5;
+  pointer-events: none;
+  z-index: 2;
+}
+
+/* Style the dropdown */
+.iti__country-list {
+  background: #112044;
+  border: 1px solid #00a0dc;
+  box-shadow: 0 4px 16px rgba(0,160,220,0.2);
+  border-radius: 8px;
+  max-height: 200px;
+  overflow-y: auto;
+  font-family: inherit;
+}
+
+/* Countries */
+.iti__country {
+  padding: 0.45em 0.9em;
+  color: #f4f7f9;
+  background-color: #0a192f;
+}
+.iti__country:hover,
+.iti__country.iti__highlight {
+  background: rgba(252,213,90,0.15);
+  color: black;
+}
+
+/* Hide plugin’s built-in search if you prefer */
+.iti__country-filter {
+  display: none;
+}
+/* LOCATION MAP */
+#location {
+  margin-bottom: 2.5rem;
+  padding: 2rem;
+  background: rgba(18,33,70,0.85);
+  border-radius: 16px;
+  box-shadow: 0 3px 25px rgba(0,30,90,0.13);
+}
+#location h2 {
+  color: #00a0dc;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 0.5rem;
+}
+#location p {
+  color: #cce3ee;
+  margin-bottom: 1rem;
+}
+.map-container {
+  width: 100%;
+  height: 240px;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.2);
+}
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+/* ========================================================================
+   RESPONSIVE
+   ======================================================================== */
+@media (max-width: 600px) {
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+  .tagline {
+    font-size: 1.2rem;
+  }
+}
