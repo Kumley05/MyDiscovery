@@ -42,6 +42,52 @@ a:hover {
 }
 
 /* ========================================================================
+   Navigation SECTION
+   ======================================================================== */
+/* New Fixed Top Navigation Bar Styling */
+#main-nav {
+    background-color: rgba(10, 25, 47, 0.95); /* Slightly transparent dark blue */
+    padding: 15px 0;
+    position: fixed; /* Makes the navigation stick to the top */
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Ensures nav is always on top */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+#main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Arranges list items horizontally */
+    justify-content: center; /* Centers the navigation links */
+    flex-wrap: wrap; /* Allows links to wrap on smaller screens */
+}
+
+#main-nav ul li {
+    margin: 0 15px; /* Spacing between navigation items */
+}
+
+#main-nav ul li a {
+    color: #00a0dc; /* A contrasting color for links */
+    text-decoration: none; /* Removes underline */
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.1em;
+    padding: 8px 0; /* Vertical padding to give clickable area */
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    display: block; /* Make the whole padding area clickable */
+}
+
+#main-nav ul li a:hover {
+    color: #64ffda; /* Lighter hover color */
+    border-bottom: 2px solid #64ffda; /* Underline effect on hover */
+}
+
+
+/* ========================================================================
    HERO SECTION
    ======================================================================== */
 #hero {
@@ -87,7 +133,7 @@ a:hover {
    GLOBAL SECTIONS
    ======================================================================== */
 section {
-  padding: 4rem 1rem;
+  padding: 5rem 1rem;
   max-width: 1000px;
   margin: 0 auto;
 }
@@ -116,7 +162,7 @@ section h2 {
   flex-wrap: wrap;
   justify-content: center;
   gap: 1.5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 5rem;
 }
 .skill-logos a {
   width: 60px;
@@ -156,6 +202,83 @@ section h2 {
 #experience .item ul {
   list-style: disc inside;
 }
+/* --------------- */
+/* EXPERIENCE LOGOS */
+/* --------------- */
+.company-header {
+    margin-bottom: 15px;
+}
+.logo-title-container a:hover{
+    transform: scale(1.55);
+    filter: drop-shadow(0 0 8px rgba(0, 160, 220, 0.5));
+}
+
+.logo-title-container a:hover{
+    transform: scale(1.55);
+    filter: drop-shadow(0 0 8px rgba(0, 160, 220, 0.5));
+}
+
+
+.logo-title-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.company-logo {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.title-container {
+    flex: 1;
+}
+
+.title-container h3, .title-container h4 {
+    margin: 0;
+}
+
+.title-container h4 {
+    margin-top: 5px;
+    color: #666;
+}
+/* remove the white box behind your logo wrapper */
+#experience .timeline .item .company-link {
+  background: none;    /* instead of #fff */
+  /* — or if you can’t edit the original rule — */
+  background-color: transparent !important;
+}
+
+#experience .timeline .item .company-logo {
+  flex-shrink: 0;
+  width: 55px;        /* adjust to taste */
+  height: 45px;       /* keep square or change as needed */
+  object-fit: contain;
+  margin-right: 1rem;
+  /* optional styling */
+  border-radius: 10px; /* rounded corners */
+  background: #fff;   /* if your logos have transparency */
+}
+
+#experience .timeline .item .item-content {
+  flex: 1;
+}
+
+
+/* mobile: stack logo & text */
+@media (max-width: 600px) {
+  #experience .timeline .item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #experience .timeline .item .company-logo {
+    margin-bottom: 0.5rem;
+    margin-right: 0;
+  }
+}
+
+
 
 /* ========================================================================
    PROJECTS
