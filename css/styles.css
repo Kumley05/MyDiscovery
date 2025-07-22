@@ -172,7 +172,8 @@ section h2 {
   height: 60px;
   display: inline-block;
   transition: transform 0.2s,filter 0.2s;
-  /* background-color: #eee; */
+  border-radius: 10px;
+  background-color: #eee;
   
 }
 .skill-logos a:hover {
