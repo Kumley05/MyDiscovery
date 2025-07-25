@@ -465,3 +465,79 @@ footer .location {
     font-size: 1.2rem;
   }
 }
+/* ========================================================================
+   pricing
+   ======================================================================== */
+/* Header and Navigation */
+#main-nav {
+    background-color: rgba(10, 25, 47, 0.95);
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-menu li {
+    margin: 0 15px;
+}
+
+.nav-menu a {
+    color: #00a0dc;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.1em;
+    padding: 8px 0;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.nav-menu a:hover {
+    color: #64ffda;
+    border-bottom: 2px solid #64ffda;
+}
+
+/* Page Section */
+.pricing-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.plan {
+    background: rgba(20, 30, 50, 0.85);
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    width: 28%;
+    border: 1px solid #333;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.plan h3, .plan p {
+    margin-bottom: 15px;
+}
+

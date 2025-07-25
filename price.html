@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Naveen Kumar M – Pricing</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- 3D NET BACKGROUND -->
+    <div id="vanta-bg"></div>
+    <!-- DARK OVERLAY FOR READABILITY -->
+    <div id="overlay"></div>
+
+    <!-- FIXED TOP NAVIGATION HEADER -->
+    <nav id="main-nav">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="images/JumpToJob.png" alt="Logo" />
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="price.html">Pricing</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <div id="content">
+
+        <!-- PRICING SECTION -->
+        <section id="pricing">
+            <h2>Our Service Pricing</h2>
+            <div class="pricing-grid">
+                <div class="plan">
+                    <h3>Free Plan</h3>
+                    <p>$0/month</p>
+                    <p>Includes basic consultation.</p>
+                </div>
+                <div class="plan">
+                    <h3>Hourly Plan</h3>
+                    <p>$50/hour</p>
+                    <p>Suitable for short-term projects.</p>
+                </div>
+                <div class="plan">
+                    <h3>Project Plan*</h3>
+                    <p>$1500/Project</p>
+                    <p>Tailored for specific projects.</p>
+                </div>
+                <div class="plan">
+                    <h3>Monthly Plan</h3>
+                    <p>$1500/month</p>
+                    <p>Ideal for ongoing support.</p>
+                </div>
+
+                <div class="plan">
+                    <h3>Yearly Plan</h3>
+                    <p>$15,000/year</p>
+                    <p>Comprehensive, full-year service.</p>
+                </div>
+            </div>
+            <p>* Plan pricing varies based on project scope and requirements.</p>
+        </section>
+        <section id="terms">
+            <h3>Terms and Conditions</h3>
+            <ul>
+                <li>All payments are due upon delivery of the final product.</li>
+                <li>A deposit is required to begin work on all project-based engagements.</li>
+                <li>Revisions are limited to two rounds per project.</li>
+                <li>Cancellations must be made within 48 hours of starting the project to receive a full refund.</li>
+            </ul>
+        </section>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <p class="location">Based in Bangalore · Open to opportunities everywhere (including remote)</p>
+        <p>© 2025 Naveen Kumar M – Data Engineer</p>
+    </footer>
+
+    <!-- 3D NET SCRIPT -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+    <script>
+        VANTA.NET({
+            el: "#vanta-bg",
+            backgroundColor: 0x0a192f,
+            color: 0x00a0dc,
+            points: 13.0,
+            maxDistance: 25.0,
+            spacing: 20.0,
+            scale: 1.5,
+            scaleMobile: 1.0,
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false
+        });
+    </script>
+</body>
+
+</html>
