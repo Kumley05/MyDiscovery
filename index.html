@@ -24,24 +24,24 @@
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-G8MQHRZTZR"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'G-G8MQHRZTZR');
+    gtag('config', 'G-G8MQHRZTZR');
 </script>
 
 <!--Start of Tawk.to Script-->
 <script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/63b58590c2f1ac1e202ba660/1gluh3fih';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function () {
+        var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = 'https://embed.tawk.to/63b58590c2f1ac1e202ba660/1gluh3fih';
+        s1.charset = 'UTF-8';
+        s1.setAttribute('crossorigin', '*');
+        s0.parentNode.insertBefore(s1, s0);
+    })();
 </script>
 <!--End of Tawk.to Script-->
 
@@ -54,15 +54,37 @@ s0.parentNode.insertBefore(s1,s0);
     <!-- NEW FIXED TOP NAVIGATION HEADER -->
     <!-- This will be your persistent header at the top -->
     <nav id="main-nav">
-        <ul>
-            <li><a href="https://jumptojob.com/">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <!-- <li><a href="price.html">Pricing</a></li> -->
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/JumpToJob.png" alt="Logo" />
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="https://jumptojob.com/">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#skills">Skills</a></li>
+                <li><a href="index.html#experience">Experience</a></li>
+                <!-- Services w/ nested dropdown -->
+                <!-- <li class="has-dropdown">
+                    <a href="services.html">Services</a>
+                    <ul class="dropdown">
+                        <li><a href="service.html#Automation">Automation</a></li>
+                        <li><a href="service.html#business-reports">Business Reports</a></li>
+                        <li><a href="service.html#constructions">Constructions</a></li>
+                        <li><a href="service.html#mortgage">Mortgage</a></li>
+                    </ul>
+                </li> -->
+                <!-- <li class="has-dropdown"><a href="price.html">Pricing</a>
+                 <ul class="dropdown">
+                        <li><a href="price.html#Free Plan">Free</a></li>
+                        <li><a href="price.html#Hourly Plan">Paid</a></li>
+                    </ul>
+                </li> -->
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
     </nav>
 
     <!-- MAIN CONTENT -->
@@ -84,9 +106,13 @@ s0.parentNode.insertBefore(s1,s0);
         <section id="about">
             <h2>About Me</h2>
             <p>
-                Data Engineer with 5+ years’ experience building scalable ETL pipelines on AWS, Python & SQL.
-                I turn raw data into actionable insights via automated workflows and dashboards,
-                reducing manual work by up to 75%.
+                I’m a Data Engineer with 5+ years of hands-on experience architecting and operating scalable ETL
+                pipelines on AWS, Snowflake, Python, and SQL. I specialize in turning raw data into reliable, automated
+                workflows and interactive dashboards that empower teams to make faster, smarter decisions.
+                By building data quality frameworks and end-to-end automation, I’ve reduced manual reporting effort by
+                up to 75%, boosted data processing speeds by 60%, and maintained 99.9% accuracy. I’m currently extending
+                my skill set with PyTorch-powered ML infrastructure to embed predictive analytics into robust data
+                platforms.
             </p>
         </section>
 
@@ -95,8 +121,8 @@ s0.parentNode.insertBefore(s1,s0);
             <h2>Top Skills for Data Engineer & BI</h2>
             <div class="skill-logos">
                 <!-- Top Skills -->
-                
-               
+
+
                 <a href="https://www.mysql.com/" target="_blank" title="MySQL">
                     <img src="https://www.mysql.com/common/logos/logo-mysql-170x115.png" alt="MySQL" />
                 </a>
@@ -104,13 +130,13 @@ s0.parentNode.insertBefore(s1,s0);
                     <img src="https://upload.wikimedia.org/wikipedia/commons/2/29/Postgresql_elephant.svg"
                         alt="PostgreSQL" />
                 </a>
-                
+
                 <a href="https://powerbi.microsoft.com" target="_blank" title="Power BI">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/New_Power_BI_Logo.svg"
                         alt="Power BI" />
                 </a>
-                <a href="https://looker.com" target="_blank" title="Looker Studio">
-                    <img src="https://www.svgrepo.com/show/354012/looker-icon.svg" alt="Looker Studio" />
+                <a href="https://looker.com" target="_blank" title="Looker Studio & LookerML">
+                    <img src="https://www.svgrepo.com/show/354012/looker-icon.svg" alt="Looker Studio & LookerML" />
                 </a>
                 <a href="https://www.tableau.com" target="_blank" title="Tableau">
                     <img src="https://cdn.worldvectorlogo.com/logos/tableau-software.svg" alt="Tableau"
@@ -124,14 +150,18 @@ s0.parentNode.insertBefore(s1,s0);
                     <img src="https://numpy.org/images/logo.svg" alt="NumPy" />
                 </a>
                 <a href="https://pandas.pydata.org" target="_blank" title="Pandas">
-    <img src="https://pandas.pydata.org/static/img/pandas_mark.svg" alt="Pandas">
-</a>
+                    <img src="https://pandas.pydata.org/static/img/pandas_mark.svg" alt="Pandas">
+                </a>
                 <a href="https://aws.amazon.com" target="_blank" title="AWS">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg"
                         alt="AWS" />
                 </a>
-                 <a href="https://www.snowflake.com/en/" target="_blank" title="snowflake">
+                <a href="https://www.snowflake.com/en/" target="_blank" title="snowflake">
                     <img src="https://logo.clearbit.com/snowflake.com" alt="Snowflake" />
+                </a>
+                <a href="https://pytorch.org/" target="_blank" title="PyTorch">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg"
+                        alt="Snowflake" />
                 </a>
                 <!-- <a href="https://airflow.apache.org" target="_blank" title="Apache Airflow">
                     <img src="https://cwiki.apache.org/confluence/download/attachments/145723561/airflow_transparent.png?api=v2"
@@ -167,14 +197,15 @@ s0.parentNode.insertBefore(s1,s0);
                     <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Selenium_Logo.png" alt="Selenium" />
                 </a>
                 <a href="https://n8n.io" target="_blank" title="n8n">
-                    <img src="https://images.seeklogo.com/logo-png/61/1/n8n-icon-logo-png_seeklogo-619411.png" alt="n8n"/>
+                    <img src="https://images.seeklogo.com/logo-png/61/1/n8n-icon-logo-png_seeklogo-619411.png"
+                        alt="n8n" />
                 </a>
-                
+
                 <a href="https://analytics.google.com" target="_blank" title="Google Analytics">
                     <img src="https://www.gstatic.com/analytics-suite/header/suite/v2/ic_analytics.svg"
                         alt="Google Analytics" />
                 </a>
-                
+
                 <a href="https://www.salesforce.com" target="_blank" title="Salesforce">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/f/f9/Salesforce.com_logo.svg"
                         alt="Salesforce" />
@@ -193,7 +224,8 @@ s0.parentNode.insertBefore(s1,s0);
                 </a>
 
                 <a href="https://swagger.io/tools/swagger-ui/" target="_blank" title="Swagger UI">
-                    <img src="https://seeklogo.com/images/S/swagger-logo-A49F73BAF4-seeklogo.com.png" alt="Swagger UI"/>
+                    <img src="https://seeklogo.com/images/S/swagger-logo-A49F73BAF4-seeklogo.com.png"
+                        alt="Swagger UI" />
                 </a>
 
                 <a href="https://www.docker.com" target="_blank" title="Docker">
@@ -219,8 +251,18 @@ s0.parentNode.insertBefore(s1,s0);
                     </div>
                     <ul>
                         <li>Built AWS pipelines, reducing updates by 75% and speeding hiring by 30%.</li>
-                        <li>Developed recruitment & performance dashboards, used by 50+ stakeholders.
-                        </li>
+                        <li>Implemented ETL pipelines using AWS and Snowflake, improving data processing efficiency by
+                            40%</li>
+                        <li>Developed automated tracking systems integrating n8n workflows with Python scripts</li>
+                        <li>Created real-time dashboards in Microsoft Power BI for recruitment and performance
+                            monitoring</li>
+                        <li>Optimized database queries in PostgreSQL, reducing response time by 50%</li>
+                        <li>Established data quality frameworks ensuring 99.9% data accuracy</li>
+                        <li>Led cross-functional teams to deliver analytics solutions improving hiring and training
+                            decisions</li>
+                        <li>Trained stakeholders on Power BI dashboards, achieving 100% adoption across departments</li>
+                        <li>Integrated Slack/email alerts in n8n for real-time operational tracking</li>
+                        <li>Developed version-controlled dbt models for scalable data transformations</li>
                     </ul>
                 </div>
                 <div class="item">
@@ -235,9 +277,15 @@ s0.parentNode.insertBefore(s1,s0);
                         </div>
                     </div>
                     <ul>
-                        <li>Designed Power BI & Looker dashboards, reducing manual reporting by 60%.</li>
-                        <li>Automated ETL workflows with Python, SQL & Selenium, eliminating 20+ weekly manual tasks.
-                        </li>
+                        <li>Architected data pipelines processing daily records using Python and SQL</li>
+                        <li>Built automated reporting systems using Power BI and Looker Studio, reducing manual effort
+                            by 60%</li>
+                        <li>Integrated multiple data sources using RESTful APIs and custom ETL processes</li>
+                        <li>Implemented data validation checks reducing error rates by 85%</li>
+                        <li>Migrated legacy Excel-based MIS to automated cloud dashboards</li>
+                        <li>Conducted A/B testing on engagement data, improving lead conversion by 13%</li>
+                        <li>Collaborated with marketing/product teams to develop performance-tracking KPIs</li>
+                        <li>Optimized API integrations for faster data refresh cycles</li>
                     </ul>
                 </div>
                 <div class="item">
@@ -252,8 +300,10 @@ s0.parentNode.insertBefore(s1,s0);
                         </div>
                     </div>
                     <ul>
-                        <li>Achieved 95% CSAT for Amazon payments; analyzed data to reduce transaction errors by 15%.
-                        </li>
+                        <li>Achieved 95% CSAT for Amazon Payments by resolving issues within agreed SLAs.</li>
+                        <li>Analyzed transaction data to identify root causes, reducing payment errors by 15%.</li>
+                        <li>Built a self-service support portal that cut inbound tickets by 20%.</li>
+                        <li>Mentored & trained 5 new hires on best practices & empathetic communication.</li>
                     </ul>
                 </div>
             </div>

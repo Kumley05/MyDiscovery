@@ -89,6 +89,58 @@ a:hover {
     border-bottom: 2px solid #64ffda; /* Underline effect on hover */
 }
 
+/* position parent relative so dropdown can be absolute */
+#main-nav ul li {
+  position: relative;
+}
+
+/* hide dropdown by default */
+#main-nav .dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;        /* position below the parent li */
+  left: 0;
+  background: rgba(10,25,47,0.95);
+  border-radius: 4px;
+  padding: 0.5rem 0;
+  min-width: 180px;
+  z-index: 100;
+}
+
+/* show on hover */
+#main-nav ul li.has-dropdown:hover > .dropdown {
+  display: block;
+}
+
+/* dropdown links styling */
+#main-nav .dropdown li a {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  white-space: nowrap;
+}
+
+/* hover state for dropdown links */
+#main-nav .dropdown li a:hover {
+  background: rgba(0,160,220,0.2);
+}
+
+/* optional caret styling */
+#main-nav .has-dropdown > a {
+  position: relative;
+  padding-right: 1rem;
+}
+#main-nav .has-dropdown > a::after {
+  content: "▾";
+  position: absolute;
+  right: 0.5rem;
+  font-size: 0.75rem;
+}
+
+/* adjust z-index so dropdown sits above overlay */
+#main-nav {
+  z-index: 200;
+}
 
 /* ========================================================================
    HERO SECTION
@@ -147,9 +199,30 @@ section h2 {
   text-align: center;
 }
 /* ABOUT */
+
+
+/* keep your heading centered */
+#about h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* fully justify all paragraph lines, including the last */
 #about p {
-  max-width: 700px;
-  margin: 0 auto;
+  text-align: justify;            /* justify every line */
+  -webkit-text-align-last: justify;
+     -moz-text-align-last: justify;
+          text-align-last: justify;/* force the last line to justify too */
+  text-justify: inter-word;       /* how to spread the words */
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+/* in case you still see a ragged last line (old browsers), you can add this little “fill” hack */
+#about p::after {
+  content: "";
+  display: inline-block;
+  width: 100%;
 }
 
 /* ========================================================================
@@ -192,8 +265,8 @@ section h2 {
 #experience .timeline {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-  align-items: center;
+  gap: 3rem;
+  /* align-items: left; */
 }
 #experience .item h3 {
   font-size: 1.2rem;
@@ -208,6 +281,7 @@ section h2 {
 }
 #experience .item ul {
   list-style: disc inside;
+  align-items: center;
 }
 
 /* --------------- */
